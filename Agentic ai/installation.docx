@@ -1,0 +1,18 @@
+# @title 🔧 Installation & Setup
+# @markdown Run this cell first to install all required packages
+!pip install -q openai anthropic requests scikit-learn numpy pydantic sentence-transformers plotly ipywidgets
+
+import json
+import asyncio
+import requests
+from datetime import datetime, timedelta
+from typing import Dict, List, Optional
+from pydantic import BaseModel
+import numpy as np
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.metrics.pairwise import cosine_similarity
+from enum import Enum
+import ipywidgets as widgets
+from IPython.display import display, HTML, clear_output
+import plotly.graph_objects as go
+import plotly.express as px
